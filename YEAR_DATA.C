@@ -4,7 +4,7 @@
 #include<string.h>
 
 #define NB_ANNEE 20
-
+#define PREMIERE_ANNEE 2005
 
 typedef struct{
 	int nb_accident;
@@ -35,3 +35,6 @@ void initialiser_tab(Yeardata tab[]){
 		tab[i].blesse_leger=0;
 		}
 	}
+
+// fonction lire donnée fichier
+//fonction affiche tableau de donnée
