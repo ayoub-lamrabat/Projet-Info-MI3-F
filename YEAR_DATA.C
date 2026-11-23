@@ -26,5 +26,12 @@ typedef struct{
 	int purpose;
 	}Victime
 
-
 void initialiser_tab(Yeardata tab[]){
+	for(int i=0;i<NB_ANNEE;i++){
+		tab[i].nb_accident=0;
+		tab[i].indemnes=0;
+		tab[i].tues=0;
+		tab[i].blesse_grave=0;
+		tab[i].blesse_leger=0;
+		}
+	}
