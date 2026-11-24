@@ -24,7 +24,7 @@ typedef struct{
 	int gender;
 	int birth_year;
 	int purpose;
-	}Victime
+	}Accident
 
 void initialiser_tab(Yeardata tab[]){
 	for(int i=0;i<NB_ANNEE;i++){
