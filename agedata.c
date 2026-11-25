@@ -28,4 +28,6 @@ Chainon* insertDebut(Chainon* pliste,int age ){
 		exit(2);
 	}
 	nouveau->suivant=pliste;
-return nouveau;}
+return nouveau;
+}
+
