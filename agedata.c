@@ -9,8 +9,23 @@ Chainon* creationChainon(int age){
 	if(c==NULL){
 		exit(1);
 	}
-	c->valeur->age=age;
+	c->valeur.age=age;
+	c->valeur.conducteur=0;
+	c->valeur.passager=0;
+	c->valeur.pieton=0;
+	c->valeur.autre_type=0;
+	c->valeur.homme=0;
+	c->valeur.femme=0;
+	c->valeur.autre_genre=0;
 	c->suivant=NULL;
 return c;
 }
 
+Chainon* insertDebut(Chainon* pliste,int age ){
+
+	Chainon* nouveau=creationChainon(age);
+	if (nouveau==NULL){
+		exit(2);
+	}
+	nouveau->suivant=pliste;
+return nouveau;}
