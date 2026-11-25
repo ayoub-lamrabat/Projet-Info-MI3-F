@@ -9,7 +9,8 @@ int age;
 int conducteur;
 int passager;
 int pieton;
+int autre_type;
 int homme;
 int femme;
-int autre;
+int autre_genre;
 }Agedata
