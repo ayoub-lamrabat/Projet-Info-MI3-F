@@ -40,15 +40,17 @@ return nouveau;
 	char ligne[256] ;
 	fgets(ligne, sizeof (ligne),f) ;
 	while(fgets(ligne, sizeof(ligne), f) !=NULL){
-	if (sscanf(ligne, "%d;%*d;%*[^;];%*d;%d;%*d;%d;%d",&annee1, &type, &genre,&birth ) != 4 || (type != 1 && type !=2 && type != 3 )||(genre != 0 && genre !=1 && genre != 2 )){
+		if (sscanf(ligne, "%d;%*d;%*[^;];%*d;%d;%*d;%d;%d",&annee1, &type, &genre,&birth ) != 4 || (type != 1 && type !=2 && type != 3 )||(genre != 0 && genre !=1 && genre != 2 )){
 		
 	continue ;
 		
 	}
-	if(annee1>= 2005 && annee1 <= 2024){
-	int age1=annee1-birth;
-	while(pliste!=NULL){
-		if(pliste->valeur.age==age1){
-			if(type==1){
-				pliste->valeur.
+		if(annee1>= 2005 && annee1 <= 2024){
+		int age1=annee1-birth;
+			if(pliste==NULL){
+				pliste=creationChainon(age1);}
+			while(pliste!=NULL){
+				if(pliste->valeur.age==age1){
+					if(type==1){
+						pliste->valeur.
 		
