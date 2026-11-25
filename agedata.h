@@ -1,6 +1,6 @@
 typedef struct chainon
 {
-  Agedata value;
+  Agedata valeur;
 	struct chainon* suivant;
 } Chainon;
 
