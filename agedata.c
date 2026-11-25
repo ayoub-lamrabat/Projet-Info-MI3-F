@@ -30,6 +30,10 @@ Chainon* insertDebut(Chainon* pliste,int age ){
 	nouveau->suivant=pliste;
 return nouveau;
 }
+	int annee1;
+	int type;
+	int genre;
+	int birth;
 
 	FILE * f = NULL ;
 	f = fopen("test.csv", "r");
@@ -41,4 +45,10 @@ return nouveau;
 	continue ;
 		
 	}
-	if(annee >= 2005 && annee <= 2024){
+	if(annee1>= 2005 && annee1 <= 2024){
+	int age1=annee1-birth;
+	while(pliste!=NULL){
+		if(pliste->valeur.age==age1){
+			if(type==1){
+				pliste->valeur.
+		
