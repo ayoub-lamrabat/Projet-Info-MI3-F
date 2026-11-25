@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "yeardata.h"
 
 int main(){
 	printf("==================================================================== \n");
@@ -17,7 +18,7 @@ int main(){
 	while ((c= getchar()) != '\n' && c != EOF){}
 	}
 	if (a== 1){
-				//fichier annee 
+		tabinfos();		//fichier annee 
 	}
 	if (a==2){
 				//fichier age
@@ -25,6 +26,5 @@ int main(){
 	if (a==3){
 				//crash data
 	}
-	printf("%d \n", a);
 	return 1;
 }
