@@ -12,7 +12,7 @@ typedef struct{
 	int tues;
 	int blesse_grave;
 	int blesse_leger;
-	} Yeardata
+	} Yeardata;
 
 typedef struct{
 	int year;
@@ -24,7 +24,7 @@ typedef struct{
 	int gender;
 	int birth_year;
 	int purpose;
-	}Accident
+	}Accident;
 
 void initialiser_tab(Yeardata tab[]){
 	for(int i=0;i<NB_ANNEE;i++){
