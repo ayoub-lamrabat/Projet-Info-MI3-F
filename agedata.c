@@ -13,7 +13,6 @@ Chainon* creationChainon(int age){
 	c->valeur.conducteur=0;
 	c->valeur.passager=0;
 	c->valeur.pieton=0;
-	c->valeur.autre_type=0;
 	c->valeur.homme=0;
 	c->valeur.femme=0;
 	c->valeur.autre_genre=0;
@@ -52,5 +51,22 @@ return nouveau;
 			while(pliste!=NULL){
 				if(pliste->valeur.age==age1){
 					if(type==1){
-						pliste->valeur.
+						pliste->valeur.conducteur++;}
+					if(type==2){
+						pliste->valeur.passager++;}
+					if(type==3){
+						pliste->valeur.pieton++;}
+					if(genre==1){
+						pliste->valeur.homme++;}
+					if(genre==2){
+						pliste->valeur.femme++;}
+					if(genre==0){
+						pliste->valeur.autre_genre++;}
+				}
+				else{
+				pliste=pliste->suivant;
+				}
+			}
+
+
 		
