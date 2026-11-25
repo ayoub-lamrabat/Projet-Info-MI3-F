@@ -11,4 +11,6 @@ Chainon* creationChainon(int age){
 	}
 	c->valeur->age=age;
 	c->suivant=NULL;
-return c;}
+return c;
+}
+
