@@ -39,4 +39,6 @@ return nouveau;
 	if (sscanf(ligne, "%d;%*d;%*[^;];%*d;%d;%*d;%d;%d",&annee1, &type, &genre,&birth ) != 4 || (type != 1 && type !=2 && type != 3 )||(genre != 0 && genre !=1 && genre != 2 )){
 		
 	continue ;
+		
 	}
+	if(
