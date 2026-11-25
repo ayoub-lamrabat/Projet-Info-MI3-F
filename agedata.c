@@ -9,6 +9,6 @@ Chainon* creationChainon(int age){
 	if(c==NULL){
 		exit(1);
 	}
-	c->nombre=a;
+	c->valeur->age=age;
 	c->suivant=NULL;
 return c;}
