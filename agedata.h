@@ -11,4 +11,5 @@ int passager;
 int pieton;
 int homme;
 int femme;
+int autre;
 }Agedata
