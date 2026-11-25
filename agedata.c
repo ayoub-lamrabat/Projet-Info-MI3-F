@@ -70,28 +70,16 @@ void ajouter_info(Chainon *c,int type,int genre){
 				pliste=creationChainon(age1);}
 			Chainon *courant=pliste;
 			while(courant!=NULL){
-				if(pliste->valeur.age==age1){
+				if(courant->valeur.age==age1){
+					ajouter_info(courant, type, genre);
 					trouve=1;
 					break;}
-		
-					if(type==1){
-						pliste->valeur.conducteur++;}
-					if(type==2){
-						pliste->valeur.passager++;}
-					if(type==3){
-						pliste->valeur.pieton++;}
-					if(genre==1){
-						pliste->valeur.homme++;}
-					if(genre==2){
-						pliste->valeur.femme++;}
-					if(genre==0){
-						pliste->valeur.autre_genre++;}
 				courant=courant->suivant;
 			}
 			if(!trouve){
 				Chainon *nouveau=creationChainon(age1);
 				if(nouveau!=NULL){
-
+					ajouter_info(nouveau, type, genre);
 					nouveau->suivant=pliste;
 					pliste=nouveau;}
 				else{
